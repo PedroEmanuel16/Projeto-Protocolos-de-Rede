@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolos de Rede</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta8PUbW4zAXw9x+WQxUFVHSjFE9W5ZJ4p6+a9c6Yg14qQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Protocolos de Rede</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ip">IP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#http">HTTP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tcp">TCP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#imap">IMAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#smtp">SMTP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p2p">P2P</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dns">DNS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron jumbotron-fluid text-center bg-primary text-white py-5">
+        <div class="container">
+            <h1 class="display-4">Desvendando os Protocolos de Rede</h1>
+            <p class="lead">Entenda como a comunicação acontece na internet através dos principais protocolos.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+
+        <section id="ip" class="protocol-section mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-primary"><i class="fas fa-network-wired"></i> Protocolo IP (Internet Protocol)</h2>
+                    <p class="card-text">O <strong>IP (Internet Protocol)</strong> é a base da comunicação na internet. Ele é responsável por endereçar e rotear pacotes de dados entre dispositivos em uma rede. Pense nele como o sistema de endereçamento postal da internet. Cada dispositivo conectado à rede possui um endereço IP único, que permite que os dados cheguem ao seu destino correto.</p>
+                    <p class="card-text">Existem duas versões principais do IP: IPv4 (com endereços de 32 bits) e IPv6 (com endereços de 128 bits), sendo o IPv6 a versão mais recente e com uma capacidade de endereçamento muito maior para suportar o crescimento da internet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="http" class="protocol-section mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-success"><i class="fas fa-globe"></i> Protocolo HTTP (Hypertext Transfer Protocol)</h2>
+                    <p class="card-text">O <strong>HTTP (Hypertext Transfer Protocol)</strong> é o protocolo fundamental para a World Wide Web. Ele define como os navegadores da web (clientes) e os servidores da web (servidores) se comunicam para exibir páginas da web. Quando você digita um endereço em seu navegador, o HTTP é usado para solicitar e receber os dados dessa página.</p>
+                    <p class="card-text">A versão segura do HTTP é o HTTPS (Hypertext Transfer Protocol Secure), que utiliza criptografia SSL/TLS para proteger a comunicação, sendo essencial para transações online e dados sensíveis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tcp" class="protocol-section mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-info"><i class="fas fa-exchange-alt"></i> Protocolo TCP (Transmission Control Protocol)</h2>
+                    <p class="card-text">O <strong>TCP (Transmission Control Protocol)</strong> trabalha em conjunto com o IP e é responsável por garantir a entrega confiável e ordenada de pacotes de dados. Ele estabelece uma conexão entre o remetente e o destinatário, divide os dados em segmentos, envia-os e verifica se todos os segmentos foram recebidos corretamente. Se houver perda ou erro, o TCP solicita a retransmissão.</p>
+                    <p class="card-text">É um protocolo orientado à conexão, o que o torna ideal para aplicações que exigem alta confiabilidade, como navegação web, e-mail e transferência de arquivos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="imap" class="protocol-section mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-warning"><i class="fas fa-inbox"></i> Protocolo IMAP (Internet Message Access Protocol)</h2>
+                    <p class="card-text">O <strong>IMAP (Internet Message Access Protocol)</strong> é um protocolo usado para acessar e gerenciar e-mails diretamente no servidor de e-mail. A principal vantagem do IMAP é que as mensagens permanecem no servidor, permitindo que você as acesse de múltiplos dispositivos (celular, tablet, computador) e que as alterações (como marcar como lido, mover para pasta) sejam sincronizadas em todos eles.</p>
+                    <p class="card-text">Ele oferece uma experiência de e-mail mais flexível e colaborativa em comparação com o POP3, que geralmente baixa as mensagens para um único dispositivo e as remove do servidor.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="smtp" class="protocol-section mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-danger"><i class="fas fa-paper-plane"></i> Protocolo SMTP (Simple Mail Transfer Protocol)</h2>
+                    <p class="card-text">O <strong>SMTP (Simple Mail Transfer Protocol)</strong> é o protocolo padrão para o envio de e-mails. Quando você envia um e-mail, seu cliente de e-mail se comunica com um servidor SMTP para entregar a mensagem ao servidor de e-mail do destinatário. É como o "carteiro" da internet para o correio eletrônico.</p>
+                    <p class="card-text">O SMTP é responsável pela transferência da mensagem do cliente para o servidor, e entre servidores de e-mail até que ela chegue ao servidor de destino, onde o destinatário poderá acessá-la via IMAP ou POP3.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="p2p" class="protocol-section mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-secondary"><i class="fas fa-share-alt"></i> Protocolo P2P (Peer-to-Peer)</h2>
+                    <p class="card-text">O <strong>P2P (Peer-to-Peer)</strong> não é um protocolo único, mas sim uma arquitetura de rede onde os participantes (peers) atuam como clientes e servidores simultaneamente. Ao invés de depender de um servidor central, os recursos (arquivos, serviços) são compartilhados diretamente entre os usuários conectados.</p>
+                    <p class="card-text">Exemplos populares de redes P2P incluem softwares de compartilhamento de arquivos (como BitTorrent) e algumas aplicações de comunicação. Embora controverso devido a questões de direitos autorais, o P2P é eficiente para distribuir grandes volumes de dados e para resistir a falhas em servidores centrais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dns" class="protocol-section mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-dark"><i class="fas fa-book"></i> Protocolo DNS (Domain Name System)</h2>
+                    <p class="card-text">O <strong>DNS (Domain Name System)</strong> é um sistema hierárquico e distribuído que traduz nomes de domínio legíveis por humanos (como "google.com") em endereços IP numéricos (como "172.217.160.142") que as máquinas usam para se comunicar. Pense nele como uma "lista telefônica" da internet.</p>
+                    <p class="card-text">Quando você digita um nome de domínio no seu navegador, o DNS é consultado para encontrar o endereço IP correspondente, permitindo que seu navegador se conecte ao servidor correto. Sem o DNS, teríamos que memorizar endereços IP para cada site que desejássemos visitar.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 Protocolos de Rede. Todos os direitos reservados.</p>
+            <p>Criado com <i class="fas fa-heart text-danger"></i> e Bootstrap.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
